@@ -1,0 +1,21 @@
+/* Animations */
+@keyframes slide {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-3840px); /* The image width */
+    }
+}
+
+.scrolling-image-container {
+    overflow: hidden;
+}
+
+.scrolling-image {
+    background: url("../images/Earth_poster_large.jpg") repeat-x;
+    background-size: contain;
+    height: 750px;
+    width: 7680px;
+    animation: slide 20s linear infinite;
+}
