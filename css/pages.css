@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-section {
+    position: absolute;
+    top: 30%; /* Adjust position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto';
+    width: 65%;
+}
+
+.parallax-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.parallax-section p {
+    font-size: 18px;
+}
+
+.parallax-section p.image-citation {
+    font-size: 12px;
+    text-align: left;
+}
+
+/* Define custom styles for each section */
+.section1 {
+    background-image: url("../images/tigers.jpg");
+}
+
+.section2 {
+    background-image: url("../images/zelda.jpg");
+}
+
+.section3 {
+    background-image: url("../images/pink.jpg");
+}
+
+.buffer {
+    background-color: #919191; /* Adjust color as needed */
+    height: 5px;
+    width: 100%;
+}
+
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
