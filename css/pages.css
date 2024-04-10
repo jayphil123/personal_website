@@ -1,3 +1,13 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
 body, html {
     height: 100%;
     margin: 0;
@@ -53,6 +63,10 @@ body, html {
     background-image: url("../images/pink.jpg");
 }
 
+.section4 {
+    background-image: url("../images/Grove6.jpg");
+}
+
 .buffer {
     background-color: #919191; /* Adjust color as needed */
     height: 5px;
@@ -70,4 +84,11 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
     z-index: 999;
+}
+
+#counter {
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    margin-left: -10px;
 }
