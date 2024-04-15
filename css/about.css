@@ -23,19 +23,6 @@ body, html {
     position: relative;
 }
 
-.parallax-section {
-    position: absolute;
-    top: 30%; /* Adjust position as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Roboto';
-    width: 65%;
-}
-
 .parallax-section h2 {
     font-size: 25px;
     margin-bottom: 20px;
@@ -92,3 +79,40 @@ body, html {
     top: 32px;
     margin-left: -10px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        opacity: 1;
+        transition: none;
+    }
+  }
+
+  @media only screen and (min-width: 320px) {
+    .parallax-section {
+        position: absolute;
+        top: 15%; /* Adjust position as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Roboto';
+        width: 85%;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    .parallax-section {
+        position: absolute;
+        top: 30%; /* Adjust position as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: 'Roboto';
+        width: 65%;
+    }
+  }

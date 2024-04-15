@@ -1,9 +1,16 @@
+window.addEventListener('scroll', function() {
+    var scrolled = window.scrollY;
+    var content = document.querySelector('.content');
+    content.style.top = scrolled + 'px';
+});
+
 // Select all elements with the class 'fade-in'
 const fadeElements = document.querySelectorAll('.fade-in');
 
 // Create a new Intersection Observer
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        console.log(entry)
         // If the element is in view
         if (entry.isIntersecting) {
             // Add the 'visible' class to trigger the fade-in animation
@@ -21,10 +28,4 @@ const observer = new IntersectionObserver(entries => {
 // Observe each element with the class 'fade-in'
 fadeElements.forEach(element => {
     observer.observe(element);
-});
-
-window.addEventListener('scroll', function() {
-    var scrolled = window.scrollY;
-    var content = document.querySelector('.content');
-    content.style.transform = 'translateY(' + scrolled + 'px)';
 });
