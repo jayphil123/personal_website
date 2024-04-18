@@ -93,11 +93,11 @@ body, html {
         top: 15%; /* Adjust position as needed */
         left: 50%;
         transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
+        background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
         padding: 20px;
         border-radius: 10px;
         text-align: center;
-        font-family: 'Roboto';
+        font-family: 'Verdana';
         width: 85%;
     }
   }
@@ -105,14 +105,32 @@ body, html {
   @media only screen and (min-width: 1025px) {
     .parallax-section {
         position: absolute;
-        top: 30%; /* Adjust position as needed */
+        top: 25%; /* Adjust position as needed */
         left: 50%;
         transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.6); /* Adjust transparency as needed */
+        background-color: rgba(255, 255, 255, 0.8); /* Adjust transparency as needed */
         padding: 20px;
         border-radius: 10px;
         text-align: center;
-        font-family: 'Roboto';
+        font-family: 'Verdana';
         width: 65%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .section1 {
+        background-image: url("../images/lions_phone.jpeg");
+    }
+    
+    .section2 {
+        background-image: url("../images/zelda_phone.jpg");
+    }
+    
+    .section3 {
+        background-image: url("../images/pink_phone.jpg");
+    }
+    
+    .section4 {
+        background-image: url("../images/north_phone.jpg");
     }
   }

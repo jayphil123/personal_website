@@ -10,7 +10,6 @@ const fadeElements = document.querySelectorAll('.fade-in');
 // Create a new Intersection Observer
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry)
         // If the element is in view
         if (entry.isIntersecting) {
             // Add the 'visible' class to trigger the fade-in animation
