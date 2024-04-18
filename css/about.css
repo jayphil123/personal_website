@@ -16,7 +16,6 @@ body, html {
 
 .parallax {
     height: 100%;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -132,5 +131,9 @@ body, html {
     
     .section4 {
         background-image: url("../images/north_camp.jpg");
+    }
+
+    .parallax {
+        background-attachment: fixed;
     }
   }
