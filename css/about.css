@@ -39,19 +39,19 @@ body, html {
 
 /* Define custom styles for each section */
 .section1 {
-    background-image: url("../images/lions.jpeg");
+    background-image: url("../images/lions_phone.jpg");
 }
 
 .section2 {
-    background-image: url("../images/zelda.jpg");
+    background-image: url("../images/zelda_phone.jpg");
 }
 
 .section3 {
-    background-image: url("../images/pink.jpg");
+    background-image: url("../images/pink_phone.jpg");
 }
 
 .section4 {
-    background-image: url("../images/north_camp.jpg");
+    background-image: url("../images/north_phone.jpg");
 }
 
 .buffer {
@@ -117,20 +117,20 @@ body, html {
     }
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (min-width: 475px) {
     .section1 {
-        background-image: url("../images/lions_phone.jpeg");
+        background-image: url("../images/lions.jpeg");
     }
     
     .section2 {
-        background-image: url("../images/zelda_phone.jpg");
+        background-image: url("../images/zelda.jpg");
     }
     
     .section3 {
-        background-image: url("../images/pink_phone.jpg");
+        background-image: url("../images/pink.jpg");
     }
     
     .section4 {
-        background-image: url("../images/north_phone.jpg");
+        background-image: url("../images/north_camp.jpg");
     }
   }
